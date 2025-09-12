@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Crash Prediction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 2rem;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .tech-stack {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .tech-stack h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .tech-tag {
+            background: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Stock Market Crash Prediction</h1>
+        <p class="subtitle">AI-Powered Market Risk Analysis with Deep Learning & Sentiment Analysis</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>🧠 Deep Learning Models</h3>
+                <p>Advanced LSTM and CNN-LSTM models for time series prediction</p>
+            </div>
+            <div class="feature-card">
+                <h3>📰 Sentiment Analysis</h3>
+                <p>Real-time news and social media sentiment tracking</p>
+            </div>
+            <div class="feature-card">
+                <h3>📈 Technical Indicators</h3>
+                <p>RSI, MACD, Bollinger Bands, and more technical analysis</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Real-time Predictions</h3>
+                <p>Live market data analysis with crash probability scoring</p>
+            </div>
+        </div>
+        
+        <a href="/dashboard" class="cta-button">Launch Dashboard 🎯</a>
+        
+        <div class="tech-stack">
+            <h3>Technology Stack</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">LSTM</span>
+                <span class="tech-tag">CNN</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">YFinance</span>
+                <span class="tech-tag">VADER Sentiment</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
