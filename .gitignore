@@ -123,12 +123,12 @@ dmypy.json
 .pyre/
 
 # Project specific
-data/
+#data/
 logs/
-models/
-*.pkl
-*.h5
-*.csv
+#models/
+#*.pkl
+#*.h5
+#*.csv
 .DS_Store
 
 # IDE
