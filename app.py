@@ -4,6 +4,7 @@ import numpy as np
 import json
 from datetime import datetime, timedelta
 import warnings
+import os
 warnings.filterwarnings('ignore')
 
 # Import custom modules
@@ -147,4 +148,7 @@ def health_check():
     })
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Production settings for Render
+    port = int(os.environ.get("PORT", 5000))
+    debug_mode = os.environ.get("DEBUG", "False") == "True"
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)
